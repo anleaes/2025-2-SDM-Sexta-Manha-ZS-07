@@ -1,1 +1,3 @@
 museuapp/__pycache__/*
+/apps/clientes/__pycache__/*
+/apps/clientes/migrations/*
