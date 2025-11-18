@@ -5,3 +5,5 @@ museuapp/__pycache__/*
 /apps/galerias/migrations/*
 /apps/artistas/__pycache__/*
 /apps/artistas/migrations/*
+/apps/museus/__pycache__/*
+/apps/museus/migrations/*
