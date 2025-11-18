@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'clientes.apps.ClientesConfig',
     'galerias.apps.GaleriasConfig',
+    'artistas.apps.ArtistasConfig',
 ]
 
 MIDDLEWARE = [
