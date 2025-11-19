@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'artistas.apps.ArtistasConfig',
     'museus.apps.MuseusConfig',
     'reservas.apps.ReservasConfig',
+    'eventos.apps.EventosConfig',
 ]
 
 MIDDLEWARE = [
