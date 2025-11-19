@@ -10,3 +10,5 @@ router.register('', views.MuseuViewSet, basename='museus')
 urlpatterns = [
     path('', include(router.urls) )
 ]
+
+#arrumado
