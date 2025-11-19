@@ -1,7 +1,7 @@
-from .models import Reserva
+from .models import Evento
 from rest_framework import serializers
 
 class EventoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Reserva
+        model = Evento
         fields = '__all__'
