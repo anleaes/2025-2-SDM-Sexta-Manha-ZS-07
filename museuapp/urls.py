@@ -25,4 +25,5 @@ urlpatterns = [
     path('artistas/', include('artistas.urls', namespace='artistas')),
     path('museus/', include('museus.urls', namespace='museus')),
     path('reservas/', include('reservas.urls', namespace='reservas')),
+    path('eventos/', include('eventos.urls', namespace='eventos')),
 ]
