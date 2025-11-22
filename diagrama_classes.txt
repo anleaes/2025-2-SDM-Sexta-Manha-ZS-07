@@ -1,0 +1,79 @@
+@startuml
+
+class Clientes {
+  - id: int
+  - nome: string
+  - email: string
+  - senha: string
+
+}
+
+class Galeria {
+  - id: int
+  - nome: string
+  - endereco: string
+  - capacidade: int
+  
+}
+class Artista{
+- id: int
+- nome: string
+- nacionalidade: string
+- biografia: string
+}
+
+class Museu {
+  - id: int
+  - nome: string
+  - local: string
+  - horario: string
+
+}
+
+class ReservaVisita {
+  - id: int
+  - data: date
+  - qtdPessoas: int
+  - status: string
+
+}
+
+class Evento {
+  - id: int
+  - titulo: string
+  - dataInicio: date
+  - dataFim: date
+  - tema: string
+
+}
+
+class ObraDeArte {
+  - id: int
+  - titulo: string
+  - artista: string
+  - localizacao: string
+  - status: string
+
+}
+
+class Catalogo {
+  - id: int
+  - nome: string
+  - descricao: string
+
+}
+
+' Relações e multiplicidades
+Artista "1" --> "N" ObraDeArte: pertence
+Usuario "1" --> "N" ReservaVisita : faz
+Museu "1" --> "N" Galeria : possui
+Galeria "1" --> "N" ObraDeArte : contem
+Museu "1" --> "N" Evento : organiza
+Evento "N" --> "N" ObraDeArte : exibe
+Catalogo "1" --> "N" ObraDeArte : referencia
+ReservaVisita "N" --> "1" Museu : para
+
+@enduml
+
+Catalogo -left->Evento
+Catalogo -right->Galeria

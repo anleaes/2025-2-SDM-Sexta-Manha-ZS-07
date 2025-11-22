@@ -1,4 +1,5 @@
 from django.db import models
+<<<<<<< HEAD
 from clientes.models import Cliente
 from museus.models import Museu
 # Create your models here.
@@ -15,3 +16,19 @@ class Reserva(models.Model):
         verbose_name_plural = 'Reservas'
     def __str__(self):
         return f"Reserva {self.id} - {self.cliente.nome} - {self.data}"
+=======
+
+# Create your models here.
+class Reserva(models.Model):
+    status = models.CharField(max_length=50)
+    qtd_pessoas = models.IntegerField()
+    data = models.DateField()
+    
+    class Meta:
+        verbose_name = 'Reserva'
+        verbose_name_plural = 'Reservas'
+        ordering =['id']
+
+    def __str__(self):
+        return f"{self.status} - {self.qtd_pessoas} - {self.data}"
+>>>>>>> origin/main
