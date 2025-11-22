@@ -2,6 +2,17 @@ from django.db import models
 
 # Create your models here.
 class Artista(models.Model):
+<<<<<<< HEAD
+    nome = models.CharField(max_length=100)
+    nacionalidade = models.CharField(max_length=100)
+    biografia = models.TextField()
+
+    class Meta:
+        verbose_name = 'Artista'
+        verbose_name_plural = 'Artistas'
+    def __str__(self):
+        return self.nome
+=======
     name = models.CharField('Nome', max_length=50)
     nacionalidade = models.CharField('Nacionalidade', max_length=30)
     biografia = models.CharField('Biografia', max_length=500)
@@ -13,3 +24,4 @@ class Artista(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.nacionalidade} - {self.biografia}"
+>>>>>>> origin/main

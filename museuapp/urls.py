@@ -17,6 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import path, include
+<<<<<<< HEAD
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('clientes/', include('clientes.urls', namespace='clientes')),
+    path('reservas/', include('reservas.urls', namespace='reservas')),
+    path('museus/', include('museus.urls', namespace='museus')),
+    path('galerias/', include('galerias.urls', namespace='galerias')),
+    path('artistas/', include('artistas.urls', namespace='artistas')),
+    path('obras/', include('obras.urls', namespace='obras')),
+    path('eventos/', include('eventos.urls', namespace='eventos')),
+=======
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,5 +38,6 @@ urlpatterns = [
     path('reservas/', include('reservas.urls', namespace='reservas')),
     path('eventos/', include('eventos.urls', namespace='eventos')),
     path('obras/', include('obras.urls', namespace='obras')),
+>>>>>>> origin/main
     path('catalogos/', include('catalogos.urls', namespace='catalogos')),
 ]

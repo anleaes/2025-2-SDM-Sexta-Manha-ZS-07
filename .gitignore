@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+/museuapp/__pycache__/*
+/apps/clientes/__pycache__/*
+/apps/clientes/migrations/*
+=======
 museuapp/__pycache__/*
 /apps/clientes/__pycache__/*
 /apps/clientes/migrations/*
@@ -7,3 +12,4 @@ museuapp/__pycache__/*
 /apps/artistas/migrations/*
 /apps/museus/__pycache__/*
 /apps/museus/migrations/*
+>>>>>>> origin/main
