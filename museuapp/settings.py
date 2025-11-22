@@ -23,11 +23,8 @@ sys.path.insert(0, APPS_DIR)
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-<<<<<<< HEAD
 #SECRET_KEY = 'django-insecure-anilqkzc4gz5qhi^y&3ikwk-*t)zeg50=c9fh(838hra)&!#i('
-=======
-#SECRET_KEY = 'django-insecure-yp8j@bk=*th%fd$@w=%4lzo+o5axd8+)o=23zyxt23ajw$idr)'
->>>>>>> origin/main
+
 SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
@@ -46,22 +43,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'clientes.apps.ClientesConfig',
-<<<<<<< HEAD
     'reservas.apps.ReservasConfig',
     'museus.apps.MuseusConfig',
     'galerias.apps.GaleriasConfig',
     'artistas.apps.ArtistasConfig',
     'obras.apps.ObrasConfig',
     'eventos.apps.EventosConfig',
-=======
-    'galerias.apps.GaleriasConfig',
-    'artistas.apps.ArtistasConfig',
-    'museus.apps.MuseusConfig',
-    'reservas.apps.ReservasConfig',
-    'eventos.apps.EventosConfig',
-    'obras.apps.ObrasConfig',
->>>>>>> origin/main
-    'catalogos.apps.CatalogosConfig',
 ]
 
 MIDDLEWARE = [
@@ -96,10 +83,6 @@ WSGI_APPLICATION = 'museuapp.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
@@ -138,15 +121,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-<<<<<<< HEAD
+
 LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Sao_Paulo'
-=======
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
->>>>>>> origin/main
 
 USE_I18N = True
 

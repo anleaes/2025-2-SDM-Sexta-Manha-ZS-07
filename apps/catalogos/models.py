@@ -1,5 +1,5 @@
 from django.db import models
-<<<<<<< HEAD
+
 from obras.models import Obra
 from eventos.models import Evento
 from galerias.models import Galeria
@@ -17,19 +17,4 @@ class Catalogo(models.Model):
         verbose_name_plural = 'Catálogos'
     def __str__(self):
         return self.nome
-=======
 
-# Create your models here.
-
-class Catalogo(models.Model):
-    nome = models.CharField(max_length=100)
-    descricao = models.CharField(max_length=255)
-
-    class Meta:
-        verbose_name = 'Catalogo'
-        verbose_name_plural = 'Catalogos'
-        ordering = ['id']
-
-    def __str__(self):
-        return f"{self.nome} - {self.descricao}"
->>>>>>> origin/main
