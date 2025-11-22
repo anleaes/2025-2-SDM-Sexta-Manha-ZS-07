@@ -9,8 +9,5 @@ router.register('', views.GaleriaViewSet, basename='galerias')
 
 urlpatterns = [
     path('', include(router.urls) )
-<<<<<<< HEAD
 ]
-=======
-]
->>>>>>> origin/main
+

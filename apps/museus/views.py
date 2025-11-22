@@ -4,10 +4,6 @@ from .models import Museu
 from .serializer import MuseuSerializer
 # Create your views here.
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
 class MuseuViewSet(viewsets.ModelViewSet):
     queryset = Museu.objects.all()
     serializer_class = MuseuSerializer
