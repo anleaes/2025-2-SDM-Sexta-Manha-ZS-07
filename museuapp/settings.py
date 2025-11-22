@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'artistas.apps.ArtistasConfig',
     'obras.apps.ObrasConfig',
     'eventos.apps.EventosConfig',
+    'catalogos.apps.CatalogosConfig',
 ]
 
 MIDDLEWARE = [
